@@ -16,9 +16,8 @@ import Navbar from "./components/Navbar";
 import Rooms from "./components/Rooms/Rooms";
 import UserRoom from "./components/UserRooms/UserRoom";
 import AuthContainer from "./components/AuthComps/AuthContainer";
-import FullHeader from './components/header/FullHeader'
-
-
+import FullHeader from "./components/header/FullHeader";
+import UserRoom2 from "./components/UserRooms/UserRoom2";
 
 if (localStorage.token) {
   setTokenHeader(localStorage.token);
@@ -41,8 +40,9 @@ function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-      <FullHeader/>
+        <FullHeader />
         <Switch>
+          <Route exact path="/logintest" component={UserRoom2}></Route>
           <Route exact path="/login" component={AuthContainer} />
           <Route exact path="/" component={Rooms} />
           <Route exact path="/createroom" component={CreateRoom} />

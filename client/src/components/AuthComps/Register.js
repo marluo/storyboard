@@ -6,7 +6,7 @@ import AuthInput from "./AuthInput";
 
 const Register = ({
   register,
-  onRegisterChange,
+  onChange,
   onRegisterSubmit,
   toggleLogin,
   setToggleLogin,
@@ -21,7 +21,7 @@ const Register = ({
       <AuthInput
         type={"text"}
         name={"username"}
-        onChange={onRegisterChange}
+        onChange={onChange}
         value={register.username}
         cssClass={"input-message"}
         placeholder={"username"}
@@ -29,7 +29,7 @@ const Register = ({
       <AuthInput
         type={"text"}
         name={"password"}
-        onChange={onRegisterChange}
+        onChange={onChange}
         value={register.password}
         cssClass={"input-message"}
         placeholder={"password"}
@@ -37,7 +37,7 @@ const Register = ({
       <AuthInput
         type={"text"}
         name={"password2"}
-        onChange={onRegisterChange}
+        onChange={onChange}
         value={register.password2}
         cssClass={"input-message"}
         placeholder={"password again"}
@@ -47,7 +47,7 @@ const Register = ({
       <AuthInput
         type={"color"}
         name={"colour"}
-        onLoginChange={onRegisterChange}
+        onLoginChange={onChange}
         value={register.colour}
         cssClass={"input-message"}
         placeholder={"colour"}

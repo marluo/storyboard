@@ -1,17 +1,23 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React, { Component } from "react";
+import {
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarNav,
+  MDBNavItem,
+  MDBNavLink,
+  MDBNavbarToggler,
+  MDBCollapse,
+  MDBFormInline,
+  MDBDropdown,
+  MDBDropdownToggle,
+  MDBDropdownMenu,
+  MDBDropdownItem,
+  MDBIcon
+} from "mdbreact";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const Navbar = props => {
-  return (
-    <div className="header-container">
-      <div className="header">
-        <div className="header-logo">
-          <img src=""></img>
-        </div>
-        asdasdasdasd
-      </div>
-    </div>
-  );
+  return <div>asdasd</div>;
 };
 
 Navbar.propTypes = {};
